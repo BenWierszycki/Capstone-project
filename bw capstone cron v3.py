@@ -113,7 +113,7 @@ else:
 
 # Setting current datetime to -1 hour
 
-current_time_2 = datetime.now() - pd.Timedelta(hours=0)
+current_time_2 = datetime.now() - pd.Timedelta(hours=1)
 current_datetime = current_time_2.strftime('%Y-%m-%dT%H:%M:%S+00:00')
 
 # Function to fetch data for UK locations
