@@ -111,7 +111,7 @@ else:
     latest_datetime = cur.fetchone()[0]
     latest_datetime =  latest_datetime.strftime('%Y-%m-%dT%H:%M:%S+00:00')
 
-# Setting current datetime to -1 hour
+# Setting current datetime to -1 hour to avoid 'nulls'
 
 current_time_2 = datetime.now() - pd.Timedelta(hours=1)
 current_datetime = current_time_2.strftime('%Y-%m-%dT%H:%M:%S+00:00')
